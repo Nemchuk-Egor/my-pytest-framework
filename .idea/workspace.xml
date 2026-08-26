@@ -1,29 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AIIgnoreSettings">
+    <option name="aiignore_enabled" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77a5acda-6a6e-4b02-9098-353ce011ffbd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/my-pytest-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-pytest-framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="GHAISettings">{
+  &quot;automaticallyGenerateSummary&quot;: false
+}</component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000030353275" />
+      <entry key="S5" value="1.0005934243840937" />
+      <entry key="S10" value="1.0351396389809588" />
+      <entry key="S30" value="1.7464966440923768" />
+      <entry key="S60" value="3.675300803015457" />
+      <entry key="M2" value="9.067133882191746" />
+      <entry key="M5" value="26.98426407559715" />
+      <entry key="M10" value="58.80204970124289" />
+      <entry key="M15" value="90.18943587760873" />
+      <entry key="M30" value="159.25888909438856" />
+      <entry key="H1" value="225.06922818555938" />
+      <entry key="H2" value="271.910945196867" />
+      <entry key="H4" value="302.4523119642226" />
+      <entry key="D1" value="543.1427457309325" />
+      <entry key="W1" value="847.6303143545852" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="9.176059347803966E-113" />
+      <entry key="MS500" value="3.9131927727247425E-23" />
+      <entry key="S2" value="2.5011101041988794E-6" />
+      <entry key="S5" value="0.0057454669132387375" />
+      <entry key="S10" value="0.07767281511592705" />
+      <entry key="S30" value="0.7961692468896645" />
+      <entry key="S60" value="2.3762245297214943" />
+      <entry key="M2" value="4.985265641920502" />
+      <entry key="M5" value="9.821523784842016" />
+      <entry key="M10" value="17.03324608159095" />
+      <entry key="M15" value="23.69024818679159" />
+      <entry key="M30" value="37.775765780098716" />
+      <entry key="H1" value="50.90974703378202" />
+      <entry key="H2" value="60.17618196900457" />
+      <entry key="H4" value="66.23974150231992" />
+      <entry key="D1" value="120.00928611456281" />
+      <entry key="W1" value="195.40851421122036" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8526348917679567" />
+      <entry key="MS500" value="0.9686181892266277" />
+      <entry key="S2" value="0.992061822320126" />
+      <entry key="S5" value="1.0018445756473602" />
+      <entry key="S10" value="1.101190558253532" />
+      <entry key="S30" value="2.496656779719369" />
+      <entry key="S60" value="5.968679726027032" />
+      <entry key="M2" value="13.94664992219289" />
+      <entry key="M5" value="36.6963473152118" />
+      <entry key="M10" value="75.73390917767261" />
+      <entry key="M15" value="113.7871987244009" />
+      <entry key="M30" value="196.96442102685927" />
+      <entry key="H1" value="275.9333031536987" />
+      <entry key="H2" value="332.06066133639683" />
+      <entry key="H4" value="368.67763712188207" />
+      <entry key="D1" value="663.1477125266985" />
+      <entry key="W1" value="1043.0378186784033" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3I2zBw0wigoFOQ4zR3o0F9VFFvu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,6 +114,7 @@
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -44,9 +125,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion.popup",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Егор\OneDrive\Рабочий стол\courses\my-pytest-framework\clients" />
+      <recent name="C:\Users\Егор\OneDrive\Рабочий стол\courses\my-pytest-framework\clients\bank" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
