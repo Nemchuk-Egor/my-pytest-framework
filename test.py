@@ -1,30 +1,29 @@
-from clients.bank.clients.users.users_client import (
-    create_user_client,
-)
 from time import time
 
-from clients.bank.clients.users.users_schema import (
-    CreateUserRequestSchema,
-    CreateUserResponseSchema,
-)
+from clients.api_courses.private_http_builder import AuthenticationScheme
+from clients.api_courses.users.private_http_client import get_private_users_client
+from clients.api_courses.users.public_http_client import create_public_user_client
+from clients.api_courses.users.users_scheme import CreateUserRequestScheme
 
-payload_data = CreateUserRequestSchema(
+data_user = CreateUserRequestScheme(
     email=f"user{time()}@example.com",
+    password="string",
     lastName="string",
     firstName="string",
     middleName="string",
-    phoneNumber="string",
 )
 
-user_client = create_user_client()
-create_user_response = user_client.create_user(payload_data)
-
+public_user_client = create_public_user_client()
+create_user_response = public_user_client.create_user(data_user)
 print(create_user_response.status_code)
-print(CreateUserResponseSchema.model_validate_json(create_user_response.text))
+print(create_user_response.json())
 
-user_data = create_user_response.json()
-user_id = user_data["user"]["id"]
-get_user_response = user_client.get_user(user_id)
+user = AuthenticationScheme(
+    email=data_user.email,
+    password=data_user.password,
+)
 
+private_user_client = get_private_users_client(user)
+get_user_response = private_user_client.get_user()
 print(get_user_response.status_code)
 print(get_user_response.json())
