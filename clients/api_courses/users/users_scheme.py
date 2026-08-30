@@ -21,3 +21,15 @@ class CreateUserRequestScheme(BaseModel):
 
 class CreateUserResponseScheme(BaseModel):
     user: UserScheme
+
+
+class UpdateUserRequestScheme(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+    email: str | None
+    last_name: str | None = Field(alias="lastName")
+    first_name: str | None = Field(alias="firstName")
+    middle_name: str | None = Field(alias="middleName")
+
+
+class UpdateUserResponseScheme(BaseModel):
+    user: UserScheme

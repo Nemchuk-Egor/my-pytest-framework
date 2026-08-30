@@ -7,7 +7,9 @@ from clients.api_courses.users.users_scheme import CreateUserRequestScheme
 
 class PublicUserClient(ApiClient):
     def create_user(self, request: CreateUserRequestScheme) -> Response:
-        return self.client.post(url="/api/v1/users", json=request.model_dump(by_alias=True))
+        return self.client.post(
+            url="/api/v1/users", json=request.model_dump(by_alias=True)
+        )
 
 
 def create_public_user_client() -> PublicUserClient:
