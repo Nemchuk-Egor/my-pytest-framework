@@ -8,31 +8,17 @@ class UserScheme(BaseModel):
     last_name: str = Field(alias="lastName")
     first_name: str = Field(alias="firstName")
     middle_name: str = Field(alias="middleName")
+    phone_Number: str = Field(alias="phoneNumber")
 
 
 class CreateUserRequestScheme(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
     email: str
-    password: str
     last_name: str = Field(alias="lastName")
     first_name: str = Field(alias="firstName")
     middle_name: str = Field(alias="middleName")
+    phone_Number: str = Field(alias="phoneNumber")
 
 
 class CreateUserResponseScheme(BaseModel):
-    user: UserScheme
-
-
-class UpdateUserRequestScheme(BaseModel):
-    model_config = ConfigDict(populate_by_name=True)
-    email: str | None
-    last_name: str | None = Field(alias="lastName")
-    first_name: str | None = Field(alias="firstName")
-    middle_name: str | None = Field(alias="middleName")
-
-
-class UpdateUserResponseScheme(BaseModel):
-    user: UserScheme
-
-class GetUserResponseSchema(BaseModel):
     user: UserScheme
