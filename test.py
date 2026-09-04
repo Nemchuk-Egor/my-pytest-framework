@@ -1,6 +1,6 @@
 from time import time
 
-from assertions.schema import validate_json_schema
+from tools.assertions.schema import validate_json_schema
 from clients.api_courses.private_http_builder import AuthenticationScheme
 from clients.api_courses.users.private_http_client import get_private_users_client
 from clients.api_courses.users.public_http_client import create_public_user_client
