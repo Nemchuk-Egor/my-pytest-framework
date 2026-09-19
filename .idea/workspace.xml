@@ -8,21 +8,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77a5acda-6a6e-4b02-9098-353ce011ffbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/api_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bank_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/authentication/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/authentication/authentication_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/private_http_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/public_http_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/users/private_user_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/users/public_user_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/courses_api/users/user_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixtures/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixtures/courses_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixtures/courses_api/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/users/test_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/assertion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/assertion/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/assertion/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/assertion/validation_json_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/faker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/api_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bank_api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/course_api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/course_api/public_http_client_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/course_api/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/course_api/users/public_http_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/course_api/users/user_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/assertion/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/assertion/validation_json_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/faker.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,61 +63,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.0410025E-316" />
-      <entry key="MS500" value="7.277273704840793E-64" />
-      <entry key="S2" value="1.6424501025764238E-16" />
-      <entry key="S5" value="4.859964806325711E-7" />
-      <entry key="S10" value="7.334290543875833E-4" />
-      <entry key="S30" value="0.1689107649788894" />
-      <entry key="S60" value="0.9246383961171186" />
-      <entry key="M2" value="2.958232003148167" />
-      <entry key="M5" value="10.089741244822854" />
-      <entry key="M10" value="21.468222477107833" />
-      <entry key="M15" value="30.523001307344803" />
-      <entry key="M30" value="46.71431216530299" />
-      <entry key="H1" value="59.669463027937" />
-      <entry key="H2" value="68.02076558734795" />
-      <entry key="H4" value="72.78897949514584" />
-      <entry key="D1" value="157.55299715693684" />
-      <entry key="W1" value="1581.1289395181623" />
+      <entry key="MS100" value="1.7526233737055334" />
+      <entry key="MS500" value="1.9448279472802317" />
+      <entry key="S2" value="2.145381005866274" />
+      <entry key="S5" value="2.722503998479975" />
+      <entry key="S10" value="3.250925955262066" />
+      <entry key="S30" value="4.714522294892484" />
+      <entry key="S60" value="7.660006202347833" />
+      <entry key="M2" value="13.863991117480184" />
+      <entry key="M5" value="24.057340204026367" />
+      <entry key="M10" value="33.23573042186565" />
+      <entry key="M15" value="42.786257819955466" />
+      <entry key="M30" value="72.1121249684011" />
+      <entry key="H1" value="110.99610970935235" />
+      <entry key="H2" value="144.75440263370095" />
+      <entry key="H4" value="167.35553058907266" />
+      <entry key="D1" value="293.9453130920936" />
+      <entry key="W1" value="1811.1596334421122" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000702082454438" />
-      <entry key="S2" value="1.0915460414800933" />
-      <entry key="S5" value="1.3938698737161004" />
-      <entry key="S10" value="1.7271921421506895" />
-      <entry key="S30" value="3.0047501199643842" />
-      <entry key="S60" value="5.0311454921509" />
-      <entry key="M2" value="7.621402254488267" />
-      <entry key="M5" value="11.753935761077129" />
-      <entry key="M10" value="19.53405238849202" />
-      <entry key="M15" value="26.924511562677896" />
-      <entry key="M30" value="41.333738213340816" />
-      <entry key="H1" value="53.43208824001694" />
-      <entry key="H2" value="61.386069688544275" />
-      <entry key="H4" value="65.96608557959833" />
-      <entry key="D1" value="111.85117060221218" />
-      <entry key="W1" value="577.3092629715613" />
+      <entry key="MS100" value="7.955392794016259E-6" />
+      <entry key="MS500" value="0.11374816082993269" />
+      <entry key="S2" value="0.9643927418386281" />
+      <entry key="S5" value="1.9676673176312771" />
+      <entry key="S10" value="3.2830454878202064" />
+      <entry key="S30" value="7.843212542945081" />
+      <entry key="S60" value="13.60922220286033" />
+      <entry key="M2" value="21.286486777518235" />
+      <entry key="M5" value="31.23994598005591" />
+      <entry key="M10" value="38.93216251126862" />
+      <entry key="M15" value="46.20259033548431" />
+      <entry key="M30" value="67.32201620092854" />
+      <entry key="H1" value="94.15570468333814" />
+      <entry key="H2" value="116.8617237582595" />
+      <entry key="H4" value="131.84982702070238" />
+      <entry key="D1" value="189.84372133104904" />
+      <entry key="W1" value="744.324207868161" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="8.580771563799986E-21" />
-      <entry key="MS500" value="1.1753400844779238E-4" />
-      <entry key="S2" value="0.16657737222883104" />
-      <entry key="S5" value="0.7453863423601351" />
-      <entry key="S10" value="1.3152203608336686" />
-      <entry key="S30" value="2.979798912706867" />
-      <entry key="S60" value="5.81274425555406" />
-      <entry key="M2" value="10.47046142623134" />
-      <entry key="M5" value="21.76024383052456" />
-      <entry key="M10" value="40.91571658157645" />
-      <entry key="M15" value="57.36258828991834" />
-      <entry key="M30" value="87.98018000054249" />
-      <entry key="H1" value="113.05729462430763" />
-      <entry key="H2" value="129.3813706116649" />
-      <entry key="H4" value="138.74138028173002" />
-      <entry key="D1" value="269.40046063386535" />
-      <entry key="W1" value="2158.4355208679526" />
+      <entry key="MS100" value="0.8124915216255636" />
+      <entry key="MS500" value="1.1770325979801868" />
+      <entry key="S2" value="2.445500472671288" />
+      <entry key="S5" value="4.161159310551885" />
+      <entry key="S10" value="6.088930216526911" />
+      <entry key="S30" value="12.182417713172102" />
+      <entry key="S60" value="20.92328213926197" />
+      <entry key="M2" value="34.86757139133078" />
+      <entry key="M5" value="55.12598355347097" />
+      <entry key="M10" value="72.0586714528856" />
+      <entry key="M15" value="88.90027028244691" />
+      <entry key="M30" value="139.3660408324699" />
+      <entry key="H1" value="205.1021747187399" />
+      <entry key="H2" value="261.58459025164717" />
+      <entry key="H4" value="299.18735047322764" />
+      <entry key="D1" value="483.7844142703482" />
+      <entry key="W1" value="2555.480726374198" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
