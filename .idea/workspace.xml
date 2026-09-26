@@ -8,38 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77a5acda-6a6e-4b02-9098-353ce011ffbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/authentication/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/authentication/authentication_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/authentication/authentication_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/private_http_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/user/private_user_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/api_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bank_api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/authentication/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/authentication/authentication_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/authentication/authentication_shema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/private_http_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/public_http_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/users/private_user_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/users/public_user_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/courses_api/users/user_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/courses_api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/courses_api/authentication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/courses_api/user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/authentication/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/authentication/test_authentication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/users/test_users.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/assertion/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/assertion/authentication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/assertion/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/assertion/user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/assertion/validation_json_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/faker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/user/public_user_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/user/public_user_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/user/user_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/user/user_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/fake.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="7.0746447987358145E-68" />
-      <entry key="S2" value="2.0393499188663953E-17" />
-      <entry key="S5" value="3.207502326386744E-7" />
-      <entry key="S10" value="9.039514523373796E-4" />
-      <entry key="S30" value="0.19626320582269746" />
-      <entry key="S60" value="0.7646896964077557" />
-      <entry key="M2" value="1.5132774930646076" />
-      <entry key="M5" value="2.281111731040548" />
-      <entry key="M10" value="2.615882295411501" />
-      <entry key="M15" value="2.7380984160551263" />
-      <entry key="M30" value="2.8665465030296664" />
-      <entry key="H1" value="3.049828358427137" />
-      <entry key="H2" value="5.051191706035114" />
-      <entry key="H4" value="15.078649315370455" />
-      <entry key="D1" value="186.51731674902697" />
-      <entry key="W1" value="1910.4259712451424" />
+      <entry key="MS100" value="1.469453616524385" />
+      <entry key="MS500" value="4.016399496510385" />
+      <entry key="S2" value="8.104392957282418" />
+      <entry key="S5" value="10.519685677710964" />
+      <entry key="S10" value="11.64705602241235" />
+      <entry key="S30" value="12.520907630963872" />
+      <entry key="S60" value="12.758786096973221" />
+      <entry key="M2" value="13.209213713579151" />
+      <entry key="M5" value="21.24692590146166" />
+      <entry key="M10" value="38.35004854275466" />
+      <entry key="M15" value="50.113314197762406" />
+      <entry key="M30" value="71.3377924268714" />
+      <entry key="H1" value="118.96423176732353" />
+      <entry key="H2" value="224.34354474392828" />
+      <entry key="H4" value="357.9775802237649" />
+      <entry key="D1" value="707.6962756955548" />
+      <entry key="W1" value="2462.5519590811705" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000007233722739" />
-      <entry key="S5" value="1.006243301627225" />
-      <entry key="S10" value="1.1348381801290706" />
-      <entry key="S30" value="2.0630448785197713" />
-      <entry key="S60" value="2.7850568428494853" />
-      <entry key="M2" value="3.313878344887448" />
-      <entry key="M5" value="3.703945208919635" />
-      <entry key="M10" value="3.8481163372358376" />
-      <entry key="M15" value="3.8978672858303023" />
-      <entry key="M30" value="3.9487501484366336" />
-      <entry key="H1" value="4.037193528474144" />
-      <entry key="H2" value="5.189712648387272" />
-      <entry key="H4" value="11.298100757548335" />
-      <entry key="D1" value="114.88274289836437" />
-      <entry key="W1" value="908.8690630018948" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.2000785180713133E-114" />
+      <entry key="S5" value="4.4640473051070055E-46" />
+      <entry key="S10" value="3.8919906814305684E-23" />
+      <entry key="S30" value="1.222483659228976E-7" />
+      <entry key="S60" value="0.0014016570265678978" />
+      <entry key="M2" value="0.19084991545978" />
+      <entry key="M5" value="4.191667541586608" />
+      <entry key="M10" value="12.150803491266222" />
+      <entry key="M15" value="17.438873734556115" />
+      <entry key="M30" value="27.001406314376393" />
+      <entry key="H1" value="48.678289218060414" />
+      <entry key="H2" value="95.26308600651556" />
+      <entry key="H4" value="153.88288808352976" />
+      <entry key="D1" value="330.28593692356446" />
+      <entry key="W1" value="1140.1435356047468" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.564651343622333E-4" />
-      <entry key="MS500" value="0.24896243827361456" />
-      <entry key="S2" value="0.7063724229306051" />
-      <entry key="S5" value="0.8751430116851018" />
-      <entry key="S10" value="1.0524525398101416" />
-      <entry key="S30" value="2.1670159132127687" />
-      <entry key="S60" value="3.451520984758718" />
-      <entry key="M2" value="4.748138236686587" />
-      <entry key="M5" value="5.941801073677295" />
-      <entry key="M10" value="6.439883241059195" />
-      <entry key="M15" value="6.619287190515119" />
-      <entry key="M30" value="6.806643006136721" />
-      <entry key="H1" value="7.082560483212304" />
-      <entry key="H2" value="10.238200587571425" />
-      <entry key="H4" value="26.374270339143997" />
-      <entry key="D1" value="301.39665800497556" />
-      <entry key="W1" value="2819.291266857838" />
+      <entry key="MS100" value="1.345515667903013" />
+      <entry key="MS500" value="3.8121410239315354" />
+      <entry key="S2" value="7.998916632331702" />
+      <entry key="S5" value="10.468728643421613" />
+      <entry key="S10" value="11.619745893219736" />
+      <entry key="S30" value="12.511352448300567" />
+      <entry key="S60" value="12.755307346785644" />
+      <entry key="M2" value="13.39468778601044" />
+      <entry key="M5" value="25.410526019077714" />
+      <entry key="M10" value="50.459934634164576" />
+      <entry key="M15" value="67.51273365524732" />
+      <entry key="M30" value="98.30845840016381" />
+      <entry key="H1" value="167.6152520141371" />
+      <entry key="H2" value="319.58050434845484" />
+      <entry key="H4" value="511.8394788345056" />
+      <entry key="D1" value="1037.9741902727699" />
+      <entry key="W1" value="3602.691020960105" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -137,28 +117,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/Егор/OneDrive/Рабочий стол/courses/my-pytest-framework/testdata/files",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion.popup",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Егор/OneDrive/Рабочий стол/courses/my-pytest-framework/testdata/files&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.popup&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Егор\OneDrive\Рабочий стол\courses\my-pytest-framework\testdata\files" />
