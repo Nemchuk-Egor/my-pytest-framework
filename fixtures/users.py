@@ -1,10 +1,23 @@
+"""Pytest-фикстуры для работы с пользователями.
+
+Модуль предоставляет контейнер :class:`UserFixtures` и фикстуры
+публичного/приватного клиентов, созданного пользователя и параметризованного
+запроса на обновление. Подключается через ``conftest.py``
+(``pytest_plugins``).
+"""
+
 import pytest
 from pydantic import BaseModel
 
 from client.private_http_builder import AuthenticationSchema
 from client.user.private_user_client import PrivateUserClient, get_private_user_client
 from client.user.public_user_client import PublicUserClient, get_public_user_client
-from client.user.user_schema import CreateUserRequestSchema, CreateUserResponseSchema
+from client.user.user_schema import (
+    CreateUserRequestSchema,
+    CreateUserResponseSchema,
+    UpdateUserRequestSchema,
+)
+from tools.fake import fake
 
 
 class UserFixtures(BaseModel):
@@ -83,3 +96,17 @@ def private_user_client(function_user: UserFixtures) -> PrivateUserClient:
     :return: экземпляр :class:`PrivateUserClient` с авторизацией.
     """
     return get_private_user_client(function_user.authentication)
+
+
+@pytest.fixture
+def update_user_request(request) -> UpdateUserRequestSchema:
+    """Фикстура параметризованного запроса на обновление пользователя.
+
+    Работает вместе с ``@pytest.mark.parametrize(..., indirect=True)``:
+    в параметре передаётся callable, принимающий ``fake`` и возвращающий
+    :class:`UpdateUserRequestSchema`.
+
+    :param request: встроенная фикстура pytest с ``request.param``.
+    :return: схема запроса на обновление пользователя.
+    """
+    return request.param(fake)

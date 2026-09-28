@@ -9,6 +9,9 @@ from client.user.user_schema import (
     UserSchema,
     CreateUserResponseSchema,
     CreateUserRequestSchema,
+    GetUserResponseSchema,
+    UpdateUserResponseSchema,
+    UpdateUserRequestSchema,
 )
 from tools.assertion.base import assert_equal
 
@@ -44,3 +47,45 @@ def assert_create_user_response(
     assert_equal(response.user.first_name, request.first_name, name="first_name")
     assert_equal(response.user.last_name, request.last_name, name="last_name")
     assert_equal(response.user.middle_name, request.middle_name, name="middle_name")
+
+
+def assert_get_user_response(
+    get_user_response: GetUserResponseSchema,
+    create_user_response: CreateUserResponseSchema,
+) -> None:
+    """Проверяет, что ответ на получение пользователя совпадает с созданным.
+
+    Сравнивает пользователя из ответа GET с пользователем из ответа
+    на создание (через :func:`assert_user`).
+
+    :param get_user_response: провалидированный ответ API на получение
+        пользователя.
+    :param create_user_response: исходный ответ API на создание
+        пользователя.
+    :raises AssertionError: если данные пользователей не совпадают.
+    """
+    assert_user(get_user_response.user, create_user_response.user)
+
+
+def assert_update_user_response(
+    response: UpdateUserResponseSchema,
+    request: UpdateUserRequestSchema,
+) -> None:
+    """Проверяет, что ответ на обновление отражает переданные в запросе поля.
+
+    Сравниваются только те поля запроса, которые не равны ``None``
+    (частичное обновление).
+
+    :param response: провалидированный ответ API на обновление пользователя.
+    :param request: исходный запрос на обновление пользователя.
+    :raises AssertionError: если заполненные поля ответа не совпадают
+        с запросом.
+    """
+    if request.email is not None:
+        assert_equal(response.user.email, request.email, name="email")
+    if request.first_name is not None:
+        assert_equal(response.user.first_name, request.first_name, name="first_name")
+    if request.last_name is not None:
+        assert_equal(response.user.last_name, request.last_name, name="last_name")
+    if request.middle_name is not None:
+        assert_equal(response.user.middle_name, request.middle_name, name="middle_name")

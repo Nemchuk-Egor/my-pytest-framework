@@ -1,3 +1,11 @@
+"""Базовый HTTP-клиент поверх ``httpx``.
+
+Модуль содержит класс :class:`ApiClient` — тонкий фасад над
+:class:`httpx.Client` с типизированными методами GET, POST, PATCH
+и DELETE. От него наследуются доменные клиенты (пользователи,
+аутентификация и т.д.).
+"""
+
 from __future__ import annotations
 
 from typing import Any

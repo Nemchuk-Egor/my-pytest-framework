@@ -47,14 +47,8 @@ class CreateUserResponseSchema(BaseModel):
     user: UserSchema
 
 
-class GetUserMeResponseSchema(BaseModel):
+class GetUserResponseSchema(BaseModel):
     """Ответ API с данными текущего аутентифицированного пользователя."""
-
-    user: UserSchema
-
-
-class GetUsersResponseSchema(BaseModel):
-    """Ответ API со списком пользователей."""
 
     user: UserSchema
 
